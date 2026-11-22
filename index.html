@@ -81,6 +81,15 @@ footer small { display: block; margin-top: 10px; font-family: var(--body); font-
 
   gtag('config', 'AW-18588074505');
 </script>
+<!-- Elara Privé: count WhatsApp taps as a Google Ads conversion -->
+<script>
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest('a[href*="wa.me"]');
+    if (a) {
+      gtag('event', 'conversion', {'send_to': 'AW-18588074505/X2d_CKiX6rwdEImEvp9F'});
+    }
+  });
+</script>
 </head>
 <body>
 <main class="frame">
